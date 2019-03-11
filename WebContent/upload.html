@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>单文件上传</h2>
+	<form action="/servlet3-upload-and-download/uploadone" method="post" enctype="multipart/form-data">
+		<input type="file" name="file">
+		<input type="submit" name="upload" value="上传">
+	</form>
+	
+	<br/><br/><br/><br/><br/><br/><br/><br/>
+	<h2>多文件上传</h2>
+	<form action="/servlet3-upload-and-download/uploadmany" method="post" enctype="multipart/form-data">
+		<input type="file" name="file1">
+		<input type="file" name="file2">
+		<input type="submit" name="upload" value="上传">
+	</form>
+	
+	<br/><br/><br/><br/><br/><br/><br/><br/>
+	<h2>文件下载</h2>
+	<a href="/servlet3-upload-and-download/download">点击下载</a>
+</body>
+</html>
